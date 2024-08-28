@@ -6,13 +6,13 @@ nim	`=dup`	channels.html#=dup,Chan[T]	proc `=dup`[T](src: Chan[T]): Chan[T]		276
 nim	`=copy`	channels.html#=copy,Chan[T],Chan[T]	proc `=copy`[T](dest: var Chan[T]; src: Chan[T])		281
 nim	trySend	channels.html#trySend,Chan[T],sinkIsolated[T]	proc trySend[T](c: Chan[T]; src: sink Isolated[T]): bool		288
 nim	trySend	channels.html#trySend.t,Chan[T],T	template trySend[T](c: Chan[T]; src: T): bool		305
-nim	tryTake	channels.html#tryTake,Chan[T],Isolated[T]	proc tryTake[T](c: Chan[T]; src: var Isolated[T]): bool		313
-nim	tryRecv	channels.html#tryRecv,Chan[T],T	proc tryRecv[T](c: Chan[T]; dst: var T): bool		332
-nim	send	channels.html#send,Chan[T],sinkIsolated[T]	proc send[T](c: Chan[T]; src: sink Isolated[T])		345
-nim	send	channels.html#send.t,Chan[T],T	template send[T](c: Chan[T]; src: T)		358
-nim	recv	channels.html#recv,Chan[T],T	proc recv[T](c: Chan[T]; dst: var T)		363
-nim	recv	channels.html#recv,Chan[T]	proc recv[T](c: Chan[T]): T		372
-nim	recvIso	channels.html#recvIso,Chan[T]	proc recvIso[T](c: Chan[T]): Isolated[T]		377
-nim	peek	channels.html#peek,Chan[T]	proc peek[T](c: Chan[T]): int		384
-nim	newChan	channels.html#newChan,Positive	proc newChan[T](elements: Positive = 30): Chan[T]		388
-nimgrp	recv	channels.html#recv-procs-all	proc		363
+nim	tryTake	channels.html#tryTake,Chan[T],Isolated[T]	proc tryTake[T](c: Chan[T]; src: var Isolated[T]): bool		314
+nim	tryRecv	channels.html#tryRecv,Chan[T],T	proc tryRecv[T](c: Chan[T]; dst: var T): bool		333
+nim	send	channels.html#send,Chan[T],sinkIsolated[T]	proc send[T](c: Chan[T]; src: sink Isolated[T])		346
+nim	send	channels.html#send.t,Chan[T],T	template send[T](c: Chan[T]; src: T)		359
+nim	recv	channels.html#recv,Chan[T],T	proc recv[T](c: Chan[T]; dst: var T)		364
+nim	recv	channels.html#recv,Chan[T]	proc recv[T](c: Chan[T]): T		373
+nim	recvIso	channels.html#recvIso,Chan[T]	proc recvIso[T](c: Chan[T]): Isolated[T]		378
+nim	peek	channels.html#peek,Chan[T]	proc peek[T](c: Chan[T]): int		383
+nim	newChan	channels.html#newChan,Positive	proc newChan[T](elements: Positive = 30): Chan[T]		387
+nimgrp	recv	channels.html#recv-procs-all	proc		364
